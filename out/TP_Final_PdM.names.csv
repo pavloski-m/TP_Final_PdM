@@ -1,204 +1,222 @@
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000048 00000001 b Uroflujometro1
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000050 00000001 b press1
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000051 00000001 b press2
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000052 00000001 b tecla1
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000053 00000001 b tecla2
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0006d4 00000044 t Board_LED_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000718 00000040 t Board_TEC_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000758 00000040 t Board_GPIO_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000798 00000030 t Board_ADC_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0007c8 00000038 t Board_SPI_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000800 00000024 t Board_I2C_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001e7c 00000008 t GpioButtons
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001e84 0000000c t GpioLeds
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001e90 00000012 t GpioPorts
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001ea8 00000004 t InitClkStates
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001eac 00000074 t pinmuxing
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000049 00000001 b flagADQ
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000004a 00000001 b flagERR
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000004b 00000001 b flagNOADQ
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000052 00000001 b press1
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000053 00000001 b press2
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000054 00000001 b tecla1
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000055 00000001 b tecla2
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000058 0000000a b uartBuff
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000840 00000044 t Board_LED_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000884 00000040 t Board_TEC_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0008c4 00000040 t Board_GPIO_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000904 00000030 t Board_ADC_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000934 00000038 t Board_SPI_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00096c 00000024 t Board_I2C_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0021b8 00000008 t GpioButtons
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0021c0 0000000c t GpioLeds
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0021cc 00000012 t GpioPorts
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0021e4 00000004 t InitClkStates
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0021e8 00000074 t pinmuxing
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000004 00000038 d i2c
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0009ac 0000002c t Chip_UART_GetIndex
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001f20 00000008 t UART_BClock
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001f28 00000008 t UART_PClock
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b08 00000014 t Chip_ADC_GetClockIndex
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b1c 00000032 t getClkDiv
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000ce8 000000a0 t pll_calc_divs
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000d88 0000010c t pll_get_frac
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000e94 0000004c t Chip_Clock_FindBaseClock
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001108 00000022 t Chip_Clock_GetDivRate
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000054 00000008 b audio_usb_pll_freq
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001f3c 0000006c t periph_to_base
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001fa8 00000048 t InitClkStates
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001404 00000014 t Chip_SSP_GetClockIndex
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001418 00000018 t Chip_SSP_GetPeriphClockIndex
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b18 0000002c t Chip_UART_GetIndex
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00225c 00000008 t UART_BClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002264 00000008 t UART_PClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000cb4 00000014 t Chip_ADC_GetClockIndex
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000cc8 00000032 t getClkDiv
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000e94 000000a0 t pll_calc_divs
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000f34 0000010c t pll_get_frac
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001040 0000004c t Chip_Clock_FindBaseClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0012b4 00000022 t Chip_Clock_GetDivRate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000064 00000008 b audio_usb_pll_freq
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002278 0000006c t periph_to_base
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0022e4 00000048 t InitClkStates
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0015b0 00000014 t Chip_SSP_GetClockIndex
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0015c4 00000018 t Chip_SSP_GetPeriphClockIndex
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000003c 00000004 d ClockSpeed
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000005c 00000004 b callBackFuncParams
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000060 00000008 b tickCounter
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000068 00000004 b tickHookFunction
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0016e8 00000034 t gpioObtainPinInit
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000006c 00000004 b g_hUsb
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0020e4 t __init_array_end
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0020e0 b __preinit_array_end
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0020e0 t __init_array_start
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0020e0 b __preinit_array_start
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000f2c 0000001c T Chip_Clock_GetDividerSource
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00232c 00000048 t lpcUarts
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000006c 00000004 b callBackFuncParams
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000070 00000008 b tickCounter
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000078 00000004 b tickHookFunction
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00196c 00000034 t gpioObtainPinInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000007c 00000004 b g_hUsb
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002468 t __init_array_end
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002464 b __preinit_array_end
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002464 t __init_array_start
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002464 b __preinit_array_start
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0010d8 0000001c T Chip_Clock_GetDividerSource
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000130 00000002 W DebugMon_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000bb4 00000016 T Chip_ADC_DeInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000d60 00000016 T Chip_ADC_DeInit
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a080000 A __top_MFlashA512
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0000c0 T __section_table_start
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W I2C0_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000878 00000008 T __stdio_init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001a4c 0000003e T delayRead
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0009e4 00000008 T __stdio_init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001cd0 0000003e T delayRead
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000126 00000002 W HardFault_Handler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000000 A __vectors_start__
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000c7c 0000000c T Chip_ADC_SetResolution
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000070 00000018 B delayTEC1
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0015ac 0000002c T SysTick_Handler
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000e28 0000000c T Chip_ADC_SetResolution
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000080 00000018 B delayTEC1
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001830 0000002c T SysTick_Handler
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b98 00000040 T Chip_UART_SetBaud
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W SPIFI_ADCHS_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000644 00000002 W initialise_monitor_handles
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0007b0 00000002 W initialise_monitor_handles
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W SDIO_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000132 00000002 W PendSV_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000424 0000002c T inicializarMEF_TEC1
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000484 0000002c T inicializarMEF_TEC1
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000124 00000002 W NMI_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0020ec R __exidx_end
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002470 R __exidx_end
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0000fc T __data_section_table_end
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000004a 00000002 B muestra
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000004c 00000002 B muestra
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W UART1_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:53ff73ea A __valid_user_code_checksum
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0020ec R _etext
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:53ff727e A __valid_user_code_checksum
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002470 R _etext
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W USB1_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W TIMER3_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0011aa 0000000c T Chip_Clock_GetBaseClocktHz
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001356 0000000c T Chip_Clock_GetBaseClocktHz
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W UART0_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000154 00000012 T bss_init
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W SGPIO_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001a8c T __aeabi_uldivmod
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000a8 ? _noinit
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000a0 00000004 B SystemCoreClock
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0009d8 00000054 T Chip_UART_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001d10 T __aeabi_uldivmod
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000b8 ? _noinit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00177a 00000016 T uartWriteString
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000b0 00000004 B SystemCoreClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b44 00000054 T Chip_UART_Init
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W ADC0_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b5c 00000018 T readAdcVal
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000d08 00000018 T readAdcVal
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00012c 00000002 W UsageFault_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00125c 0000004c T Chip_Clock_GetRate
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0008b8 0000006c T Board_SetupClocking
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001408 0000004c T Chip_Clock_GetRate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000a24 0000006c T Board_SetupClocking
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:20008000 A __top_RamAHB32
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001abc 000002d0 T __udivmoddi4
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001e78 00000004 T ExtRateIn
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0005fc 00000060 T itoa
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001d40 000002d0 T __udivmoddi4
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0021b4 00000004 T ExtRateIn
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W IntDefaultHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W SSP0_SSP1_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000300 T __CRP_WORD_END__
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0020e4 R __exidx_start
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002468 R __exidx_start
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0002fc 00000004 T CRP_WORD
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b4e 0000000e T setStartMode
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001d90 00000048 T __libc_init_array
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0015d8 000000b8 T adcInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000cfa 0000000e T setStartMode
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002014 00000048 T __libc_init_array
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00185c 000000b8 T adcInit
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W ADC1_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W RIT_WDT_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W FLASH_EEPROM_ATIMER_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000848 00000030 T Board_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0006d2 00000002 W _init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0009b4 00000030 T Board_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00083e 00000002 W _init
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0000c0 T __data_section_table
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W RTC_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000a8 B _ebss
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000c88 0000002a T Chip_ADC_EnableChannel
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000b8 B _ebss
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000e34 0000002a T Chip_ADC_EnableChannel
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W TIMER0_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000648 00000088 T Reset_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001530 0000007c T tickInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0007b4 00000088 T Reset_Handler
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0017b4 0000007c T tickInit
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:20010000 A __top_RamAHB_ETB16
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000974 00000038 T Chip_I2C_SetClockRate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000ae0 00000038 T Chip_I2C_SetClockRate
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W LCD_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00059c 0000000a T encenderLed
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000ee0 0000004c T Chip_Clock_EnableCrystal
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000708 0000000a T encenderLed
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00108c 0000004c T Chip_Clock_EnableCrystal
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W M4_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000bca 00000008 T Chip_ADC_ReadValue
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000d76 00000008 T Chip_ADC_ReadValue
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10008000 A __top_RamLoc32
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000136 0000001e T data_init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000c2a 00000020 T Chip_ADC_SetStartMode
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000950 00000024 T Chip_I2C_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00109c 0000006c T Chip_Clock_GetMainPLLHz
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001ff8 000000e6 T gpioPinsInit
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001430 00000012 T Chip_SSP_SetClockRate
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0005a6 00000016 T toggleLed
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001690 00000058 T adcRead
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001184 00000026 T Chip_Clock_GetBaseClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000dd6 00000020 T Chip_ADC_SetStartMode
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000abc 00000024 T Chip_I2C_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001248 0000006c T Chip_Clock_GetMainPLLHz
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00237c 000000e6 T gpioPinsInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001760 0000001a T uartWriteByte
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0015dc 00000012 T Chip_SSP_SetClockRate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000712 00000016 T toggleLed
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001914 00000058 T adcRead
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001330 00000026 T Chip_Clock_GetBaseClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0006d0 00000028 T msgValor
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000048 B _bss
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000bd2 00000036 T Chip_ADC_ReadStatus
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000c4a 00000032 T Chip_ADC_SetSampleRate
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001a2c 00000020 T delayInit
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001442 0000003e T Chip_SSP_SetBitRate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000d7e 00000036 T Chip_ADC_ReadStatus
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000df6 00000032 T Chip_ADC_SetSampleRate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001cb0 00000020 T delayInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0015ee 0000003e T Chip_SSP_SetBitRate
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W I2S0_I2S1_QEI_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0012a8 00000002 T Chip_GPIO_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000450 0000002c T inicializarMEF_TEC2
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001ea4 00000004 T OscRateIn
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000a8 ? _end_noinit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001454 00000002 T Chip_GPIO_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0004b0 0000002c T inicializarMEF_TEC2
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0021e0 00000004 T OscRateIn
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0016e4 0000007c T uartInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000b8 ? _end_noinit
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10008000 A _vStackTop
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000124 T __bss_section_table_end
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000000 00000002 D pesoMax
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00171c 000001ac T gpioInit
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001d8c 00000002 W __aeabi_ldiv0
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00199c 0000001c T USB0_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001228 00000034 T Chip_Clock_Disable
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0019a0 000001ac T gpioInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002010 00000002 W __aeabi_ldiv0
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00066c 00000010 T msgNoAdq
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001c20 0000001c T USB0_IRQHandler
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0013d4 00000034 T Chip_Clock_Disable
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00067c 00000010 T msgAdq
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W SCT_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000f48 0000001c T Chip_Clock_GetDividerDivisor
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0010f4 0000001c T Chip_Clock_GetDividerDivisor
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0002fc T __CRP_WORD_START__
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001dd8 000000a0 T memset
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00205c 000000a0 T memset
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000128 00000002 W MemManage_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0005f0 00000054 T main
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000510 0000008c T actualizarMEF_TEC2
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000318 0000010c T urofluxUpdate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00075c 00000054 T main
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000570 0000008c T actualizarMEF_TEC2
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000318 0000016c T urofluxUpdate
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:2000c000 A __top_RamAHB16
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1008a000 A __top_RamLoc40
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00012e 00000002 W SVC_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0005bc 00000034 T apagarLeds
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0011b8 0000003c T Chip_Clock_EnableOpts
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000088 00000018 B delayTEC2
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000f64 000000b8 T Chip_Clock_GetClockInputHz
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00101c 00000080 T Chip_Clock_CalcMainPLLValue
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0014b8 00000038 T SystemInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0006f8 00000010 T msgError
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000728 00000034 T apagarLeds
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0016b8 00000018 T uartTxReady
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001364 0000003c T Chip_Clock_EnableOpts
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000098 00000018 B delayTEC2
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001110 000000b8 T Chip_Clock_GetClockInputHz
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0011c8 00000080 T Chip_Clock_CalcMainPLLValue
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001664 00000038 T SystemInit
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0000fc T __bss_section_table
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0018c8 0000006a T gpioWrite
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0006d0 00000002 W _fini
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001b4c 0000006a T gpioWrite
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00068c 00000044 T msgOffset
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00083c 00000002 W _fini
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000300 00000018 T urofluxInit
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000b74 00000040 T Chip_ADC_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000a4 00000004 B g_pUsbApi
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000880 00000038 T Board_SetupMuxing
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000a2c 000000dc T Chip_UART_SetBaudFDR
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00150c 0000000c T tickRead
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000d20 00000040 T Chip_ADC_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000b4 00000004 B g_pUsbApi
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0009ec 00000038 T Board_SetupMuxing
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000bd8 000000dc T Chip_UART_SetBaudFDR
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001790 0000000c T tickRead
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000040 00000008 D tickRateMS
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W SPI_DAC_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000cb2 00000022 T Chip_ADC_SetBurstCmd
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000e5e 00000022 T Chip_ADC_SetBurstCmd
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W ETH_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000000 ? _end_uninit_RESERVED
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1b000000 T __core_m0app_START__
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00047c 00000094 T actualizarMEF_TEC1
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0016d0 00000014 T uartTxWrite
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0004dc 00000094 T actualizarMEF_TEC1
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W CAN0_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000000 D _data
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000004c 00000002 B pesoNeto
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000a8 B _pvHeapStart
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000004e 00000002 B pesoNeto
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:100000b8 B _pvHeapStart
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W UART2_CAN1_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000124 T __section_table_end
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001480 00000038 T Chip_SSP_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000824 00000024 T Board_Debug_Init
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000c08 00000022 T Chip_ADC_Int_SetChannelCmd
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00162c 00000038 T Chip_SSP_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000990 00000024 T Board_Debug_Init
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000db4 00000022 T Chip_ADC_Int_SetChannelCmd
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000048 D _edata
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000930 00000020 T Chip_I2C_EventHandler
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000a9c 00000020 T Chip_I2C_EventHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W M0SUB_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1000004e 00000002 B pesoOffset
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0012ac 00000158 T Chip_SetupCoreClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:10000050 00000002 B pesoOffset
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001458 00000158 T Chip_SetupCoreClock
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000000 00000040 T g_pfnVectors
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000cd4 00000014 T SystemCoreClockUpdate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000e80 00000014 T SystemCoreClockUpdate
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00065c 0000000e T initUART
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W DMA_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W EVRT_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1b080000 A __top_MFlashB512
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001d8c 00000002 W __aeabi_idiv0
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a002010 00000002 W __aeabi_idiv0
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00012a 00000002 W BusFault_Handler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0011f4 00000034 T Chip_Clock_Enable
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0013a0 00000034 T Chip_Clock_Enable
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W UART3_IRQHandler
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W MCPWM_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001932 00000068 T gpioRead
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0019b8 00000074 T boardInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001bb6 00000068 T gpioRead
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001c3c 00000074 T boardInit
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000040 00000080 T g_pfnVendorVectors
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W GINT1_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a001518 00000018 T tickPowerSet
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00112c 00000058 T Chip_Clock_SetBaseClock
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0014f0 0000001c T cyclesCounterInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00179c 00000018 T tickPowerSet
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a0012d8 00000058 T Chip_Clock_SetBaseClock
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a00169c 0000001c T cyclesCounterInit
 practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000166 00000002 W GPIO4_IRQHandler
-practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000924 0000000c T Board_SystemInit
+practica/TP_Final_PdM/out/TP_Final_PdM.elf:1a000a90 0000000c T Board_SystemInit

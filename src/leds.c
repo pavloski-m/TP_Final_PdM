@@ -1,6 +1,6 @@
 /*=============================================================================
- * Author: Dany Tito - Pablo Morzán
- * Date: 2021/07/26
+ * Author: Pablo Morzán
+ * Date: 2021/08/15
  * Version: 1.0
  *===========================================================================*/
 
@@ -25,13 +25,14 @@ void  encenderLed(gpioMap_t led){
 	if (led >= 40 || led <= 45){       // se chequea valor led
 		gpioWrite(led, ON);
 
-}
+	}
 }
 
 
 void toggleLed(gpioMap_t led){
 	gpioWrite(led, !gpioRead(led));		//se modifica el valor del led, para titilar.
 }
+
 
 void  apagarLeds(){     /* apagar todos los leds */
 

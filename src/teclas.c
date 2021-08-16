@@ -1,6 +1,6 @@
 /*=============================================================================
- * Author: Dany Tito - Pablo Morzán
- * Date: 2021/07/31
+ * Author: Pablo Morzán
+ * Date: 2021/08/15
  * Version: 1.0
  *===========================================================================*/
 
@@ -24,17 +24,6 @@ static EstadosBotones tecla2;
 
 static uint8_t press1 = 0;  //es el flag de presión de tecla
 static uint8_t press2 = 0;  //es el flag de presión de tecla
-
-/*=====[Definitions of extern global variables]==============================*/
-
-/*=====[Definitions of public global variables]==============================*/
-
-/*=====[Definitions of private global variables]=============================*/
-
-/*=====[Main function, program entry point after power on or reset]==========*/
-
-//void buttonPressed(gpioMap_t tecla);
-//void buttonReleased(gpioMap_t tecla);
 
 delay_t delayTEC1;
 delay_t delayTEC2;
