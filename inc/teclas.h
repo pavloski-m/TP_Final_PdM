@@ -26,29 +26,32 @@ extern "C" {
 /*=====[Public function-like macros]=========================================*/
 
 /*=============================================================================
- * Function: leerTecla
- * Description: Realiza un chequeo del estado de las teclas de la placa EDU-CIAA (TEC1,..,TEC4)
- * Input: No se le pasan parámetros. Accede al estado de las teclas 0 presionado - 1 sin presionar
- * Output: Devuelve que tecla está presionada. En caso de presionar dos, se devuelve la de valor de referencia mas bajo.
+ * Function: inicializar MEF_TECx
+ * Description: Se inicializa la MEF de las teclas dependiendo el estado en el que
+ * 			se encuentran cuando se llama a la función. Tambien inicializa el delay
+ * 			no bloqueante para los anti-rebote.
+ * Input: No se le pasan parámetros.
+ * Output: No retorna valores
  *===========================================================================*/
 void inicializarMEF_TEC1(void);
 
 void inicializarMEF_TEC2(void);
 
+
+
+/*=============================================================================
+ * Function: actualizarMEF_TECx
+ * Description: En función del estado de los botones que se están chequeando se
+ * 			genera una transicióń de UP a DOWN pasando por FALL y de DOWN a UP
+ * 			pasando por RAISE.
+ * Input: No se les pasan parametros. Las funciones ya están asociadas a un
+ * 			boton de la placa.
+ * Output: Se devuelve 1 en caso de que haya pasado de UP a DOWN, es decir si fue
+ * 			presionado.
+ *===========================================================================*/
 uint8_t actualizarMEF_TEC1(void);
 
 uint8_t actualizarMEF_TEC2(void);
-
-/*=============================================================================
- * Function: accionTecla
- * Description: Dependiendo la tecla que se presiona se realizan distintas acciones
- * 		TEC1:secuencia con desplazamiento decreciente
- * 		TEC2:tiempo de permanencia de encendido del led: 150 ms
- * 		TEC3:tiempo de permanencia de encendido del led: 750 ms
- * 		TEC4:secuencia con desplazamiento creciente
- * Input: tecla presionada, puntero a varible que configura el retardo y al sentido de la secuencia
- * Output: No se devuelve nada. Se modifican las variables de input
- *===========================================================================*/
 
 
 /*=====[Definitions of public data types]====================================*/

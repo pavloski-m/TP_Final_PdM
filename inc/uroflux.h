@@ -13,10 +13,8 @@
 
 #include <stdint.h>
 #include <stddef.h>
-//#include "sapi.h"
 #include "leds.h"
 #include "UART_Message.h"
-
 
 /*=====[C++ - begin]=========================================================*/
 
@@ -24,20 +22,7 @@
 extern "C" {
 #endif
 
-/*=====[Definition macros of public constants]===============================*/
-
-/*=====[Public function-like macros]=========================================*/
-
-/*=====[Definitions of public data types]====================================*/
-
 /*=====[Prototypes (declarations) of public functions]=======================*/
-/*=============================================================================
- * Function: urofluxError
- * Description: Una vez que entra en este valor se considera que la medición no es confiable. Para salir de este modo se debe presionar TEC2
- * Input: No recibe input
- * Output: No devuelve nada. Pero realiza un toggle de led rojo
- *===========================================================================*/
-void urofluxError( void );
 
 /*=============================================================================
  * Function: encenderLed

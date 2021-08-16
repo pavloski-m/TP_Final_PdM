@@ -10,16 +10,53 @@
 
 #include "sapi.h"
 
+
+/*=============================================================================
+ * Function: initUART
+ * Description: Se inicializa la UART en configuración 115200 baudios.
+ * 		Se utiliza la configuración standard: 8bits, sin paridad, 1 bit de parada
+ *===========================================================================*/
 void initUART(void);
 
+/*=============================================================================
+ * Function: msgNoAdq
+ * Description: Se envía mensaje por puerto seríe que hace referencia al estado
+ * 		de no comunicación.
+ *===========================================================================*/
 void msgNoAdq(void);
 
+/*=============================================================================
+ * Function: msgAdq
+ * Description: Se envía mensaje por puerto seríe que hace referencia al estado
+ * 		de comienzo de comunicación.
+ *===========================================================================*/
 void msgAdq(void);
 
+/*=============================================================================
+ * Function: msgError
+ * Description: Se envía mensaje por puerto seríe que hace referencia al estado
+ * 		de entrada de estado de error.
+ *===========================================================================*/
+void msgError(void);
+
+/*=============================================================================
+ * Function: msgOffset
+ * Description: Se pasa el valor numérico por parametro, luego se transforma a
+ * 		ASCII y se muestra por el puerto serie luego la palabra "Offset: "
+ * Input: se le pasa el valor de offset con el que se inicializa.
+ * Output: No retorna nada. Pero saca por terminal serie un mensaje haciendo
+ * 		referencia al offset de medición.
+ *===========================================================================*/
 void msgOffset(int16_t Offset);
 
+/*=============================================================================
+ * Function: msgValor
+ * Description: Se pasa el valor numérico por parametro, luego se transforma a
+ * 		ASCII y se muestra por el puerto serie.
+ * Input: se le pasa el valor que hace referencia al led que se quiere encender
+ * Output: Si led enciende devuelve 1 y si no 0
+ *===========================================================================*/
 void msgValor(int16_t valor);
 
-void msgError(void);
 
 #endif /* _UART_MESSAGE_H_ */

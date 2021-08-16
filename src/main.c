@@ -8,17 +8,6 @@
 
 #include "main.h"
 
-/*=====[Definition macros of private constants]==============================*/
-
-/*=====[Definitions of extern global variables]==============================*/
-
-/*=====[Definitions of public global variables]==============================*/
-
-/*=====[Definitions of private global variables]=============================*/
-
-/*=====[Main function, program entry point after power on or reset]==========*/
-
-
 
 int main(void){
 
@@ -28,13 +17,14 @@ int main(void){
    /* Inicializar la placa */
    boardConfig();
 
-
-   /* Declaración de variables locales */
+   /* Declaración de delay no bloqueante */
    delay_t tiempobase;
    delayInit( &tiempobase, 500 );
 
    uint8_t valorTecla = 0;
    bool_t flagpress = 0;
+
+
    //Inicialización de MEF
 
    inicializarMEF_TEC1();

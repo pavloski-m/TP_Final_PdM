@@ -68,15 +68,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  24 .debug_macro  0000e965  00000000  00000000  000543d9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 25 .debug_line   00014b61  00000000  00000000  00062d3e  2**0
+ 25 .debug_line   00014b63  00000000  00000000  00062d3e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 26 .debug_str    000299f2  00000000  00000000  0007789f  2**0
+ 26 .debug_str    000299f2  00000000  00000000  000778a1  2**0
                   CONTENTS, READONLY, DEBUGGING
- 27 .comment      00000068  00000000  00000000  000a1291  2**0
+ 27 .comment      00000068  00000000  00000000  000a1293  2**0
                   CONTENTS, READONLY
- 28 .ARM.attributes 00000032  00000000  00000000  000a12f9  2**0
+ 28 .ARM.attributes 00000032  00000000  00000000  000a12fb  2**0
                   CONTENTS, READONLY
- 29 .debug_frame  0000190c  00000000  00000000  000a132c  2**2
+ 29 .debug_frame  0000190c  00000000  00000000  000a1330  2**2
                   CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 1a000000 l    d  .text	00000000 .text
@@ -1130,9 +1130,9 @@ return press2;
 1a0005f8:	10000098 	.word	0x10000098
 
 1a0005fc <itoa>:
-
-#include "UART_Message.h"
-
+ * 		debe escribir el valor convertido y la base en la que se desea decodificar
+ * 		el número.
+ *===========================================================================*/
 char* itoa(int value, char* result, int base) {
    // check that the base if valid
    if (base < 2 || base > 36) { *result = '\0'; return result; }
@@ -1250,7 +1250,7 @@ void msgOffset(int16_t Offset){
 1a000690:	490b      	ldr	r1, [pc, #44]	; (1a0006c0 <msgOffset+0x34>)
 1a000692:	2003      	movs	r0, #3
 1a000694:	f001 f871 	bl	1a00177a <uartWriteString>
-	itoa( Offset, uartBuff, 10 ); /* 10 significa decimal */
+	itoa( Offset, uartBuff, 10 ); /* número en base 10 */
 1a000698:	4c0a      	ldr	r4, [pc, #40]	; (1a0006c4 <msgOffset+0x38>)
 1a00069a:	220a      	movs	r2, #10
 1a00069c:	4621      	mov	r1, r4
@@ -1379,9 +1379,9 @@ void  apagarLeds(){     /* apagar todos los leds */
 1a00075a:	bd08      	pop	{r3, pc}
 
 1a00075c <main>:
+/*=====[Inclusions of function dependencies]=================================*/
 
-/*=====[Main function, program entry point after power on or reset]==========*/
-
+#include "main.h"
 
 
 int main(void){
@@ -1395,17 +1395,16 @@ int main(void){
    boardConfig();
 1a000760:	f001 fa6c 	bl	1a001c3c <boardInit>
 
-
-   /* Declaración de variables locales */
+   /* Declaración de delay no bloqueante */
    delay_t tiempobase;
    delayInit( &tiempobase, 500 );
 1a000764:	f44f 72fa 	mov.w	r2, #500	; 0x1f4
 1a000768:	2300      	movs	r3, #0
 1a00076a:	4668      	mov	r0, sp
 1a00076c:	f001 faa0 	bl	1a001cb0 <delayInit>
-
-   uint8_t valorTecla = 0;
    bool_t flagpress = 0;
+
+
    //Inicialización de MEF
 
    inicializarMEF_TEC1();
