@@ -27,7 +27,8 @@ El contexto de este proyecto se da con el fin de evaluar los conceptos adquirido
 
 **DESCRIPCIÓN DE ESTADOS**
 
-El módulo al inicializar se configura en estado de **No adquisición**, en este estado se enciende solo un LED verde y se envía un mensaje al terminal avisando que se encuentra en este. La condición de salida de este módulo es la presión del botón **TEC1**, lo que hace que se pase al estado de **Inicialización**, en este se toma el valor de "Offset" y se establece como cero al valor medido en ese momento.
+
+El módulo al inicializar se configura en estado de **No adquisición**, en este estado se enciende solo un LED verde y se envía un mensaje al terminal avisando que se encuentra en este. En la _figura 1_ se observa el diagrama de estados que se detalla a continuación. 
 
 * ESTADO: **No adquisición**
   - Condición de entrada: inicio de programa - presión de **TEC2** en estado de adquisición o de error.
@@ -51,3 +52,5 @@ El módulo al inicializar se configura en estado de **No adquisición**, en este
 
 
 ![alt text](https://github.com/pavloski-m/DocumentosAnexos/blob/main/MEF_TP_Final_PdM_1.png?raw=true)
+
+--------------------------------- _figura 1 - Diagrama de Estados_ ---------------------------------
